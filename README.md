@@ -1,6 +1,6 @@
 ## Support this project by giving it a thumbs up!
 
-## algobook
+## AlgoBook
 
 A new Flutter application for algorithms. This app is mainly to refer to the algorithms that are frequently used. Presently the app has about 30+ algorithms in it. You can contribute to this mobile app by:
   1. Go to DataStructures page
