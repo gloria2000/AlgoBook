@@ -31,6 +31,7 @@ From the command line:
 
 -Enter cd <app dir>
   (Replace <app dir> with your application’s directory.)
+  
 -Run flutter build apk --split-per-abi
   (The flutter build command defaults to --release.)
 
