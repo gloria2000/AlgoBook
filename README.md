@@ -5,6 +5,11 @@
 A new Flutter application for algorithms. This app is mainly to refer to the algorithms that are frequently used. Presently the app has about 30+ algorithms in it. You can contribute to this mobile app by:
   1. Go to DataStructures page
   2. Write your algorithm and put pr.
+  
+## App UI
+![Home page](https://github.com/gloria2000/AlgoBook/blob/master/1.jpeg)
+![Algorithm or Code](https://github.com/gloria2000/AlgoBook/blob/master/2.jpeg)
+![Error page if algorithm is not found](https://github.com/gloria2000/AlgoBook/blob/master/3.jpeg)
 
 ## Getting Started
 
