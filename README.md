@@ -9,8 +9,12 @@ If you are a beginner and want to contribute in opensource projects, then this p
   
 ## App UI
 ![Home page](https://github.com/gloria2000/AlgoBook/blob/master/1.jpeg)
+
 ![Algorithm or Code](https://github.com/gloria2000/AlgoBook/blob/master/2.jpeg)
+
 ![Error page if algorithm is not found](https://github.com/gloria2000/AlgoBook/blob/master/3.jpeg)
+
+
 
 ## Getting Started
 
@@ -29,8 +33,11 @@ samples, guidance on mobile development, and a full API reference.
 ## How to install the app 
 
 -Clone the project or download the zip file. 
+
 -Open the project in android studio or vscode with flutter plugin. 
+
 -Connect the android device or emulator. 
+
 -Run the app from terminal or GUI. 
 
 From the command line:
