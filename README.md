@@ -2,9 +2,10 @@
 
 ## AlgoBook
 
-A new Flutter application for algorithms. This app is mainly to refer to the algorithms that are frequently used. Presently the app has about 30+ algorithms in it. You can contribute to this mobile app by:
-  1. Go to DataStructures page
-  2. Write your algorithm and put pr.
+A new Flutter application for algorithms. This app is mainly to refer to the algorithms that are frequently used. Presently the app has about 30+ algorithms in it. You can contribute to this mobile app by following the steps in mentioned in [contribute.md]().
+ 
+ 
+If you are a beginner and want to contribute in opensource projects, then this project is perfect for you.
   
 ## App UI
 ![Home page](https://github.com/gloria2000/AlgoBook/blob/master/1.jpeg)
