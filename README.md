@@ -2,7 +2,7 @@
 
 ## AlgoBook
 
-A new Flutter application for algorithms. This app is mainly to refer to the algorithms that are frequently used. Presently the app has about 30+ algorithms in it. You can contribute to this mobile app by following the steps in mentioned in [contribute.md]().
+A new Flutter application for algorithms. This app is mainly to refer to the algorithms that are frequently used. Presently the app has about 30+ algorithms in it. You can contribute to this mobile app by following the steps in mentioned in [Contributor.md]().
  
  
 If you are a beginner and want to contribute in opensource projects, then this project is perfect for you.
