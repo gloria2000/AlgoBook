@@ -1,0 +1,11 @@
+//32 bit representation of 
+//an interger number
+//change value of k according 
+//to the number of bits required
+
+for( int k=31;k>=0;k--){
+   if(x&(1<<k))
+      cout<<'1';
+   else
+      cout<<'0';
+}

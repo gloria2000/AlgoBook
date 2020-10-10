@@ -1,0 +1,16 @@
+typedef int Vertex;
+#define VERTEX_NULL (-1)
+void dfsHelper(struct graph *g, Vertex parent, Vertex child)
+{
+   int i;
+   Vertex neighbor;
+   if(g->v[child].parent==VERTEX_NULL) {
+      g->v[child].parent=parent;
+      for(i = 0; (neighbor = g->v[child].neighbors[i]) != VERTEX_NULL; i++) {
+         dfsHelper(g, child, neighbor);
+         }
+     }
+}
+
+void dfs(struct graph *g, Vertex root)
+{dfsHelper(g, root, root);}\

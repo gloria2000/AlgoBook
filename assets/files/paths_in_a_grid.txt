@@ -1,0 +1,11 @@
+Given a grid, value[n][n], find the maximum sum while traversing from upper left corner to the lower right corner
+
+int sum[N][N];//To store the sum
+//sum[y][x] denotes the maximum sum from upper left corner to square[y][x]
+
+
+for (int y = 1; y <= n; y++) {
+   for (int x = 1; x <= n; x++) {
+      sum[y][x] = max(sum[y][x-1],sum[y-1][x])+value[y][x];
+   }
+}

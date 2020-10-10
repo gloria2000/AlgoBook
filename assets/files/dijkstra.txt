@@ -1,0 +1,18 @@
+function Dijkstra(Graph, source):
+       dist[source]  := 0
+       for each vertex v in Graph:
+           if v ≠ source
+               dist[v]  := infinity
+           add v to Q
+
+      while Q is not empty:
+          v := vertex in Q with min dist[v] 
+          remove v from Q 
+
+          for each neighbor u of v:
+              alt := dist[v] + length(v, u)
+              if alt < dist[u]:              
+                  dist[u]  := alt
+
+      return dist[]
+  end function

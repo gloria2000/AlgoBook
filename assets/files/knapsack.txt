@@ -1,0 +1,13 @@
+Given a list of weights [w1,w2...wn] determine all the sums that can be constructed using the given weights.
+
+By recursive method:
+
+possible[0][0] = true;
+for (int k = 1; k <= n; k++) {
+   for (int x = 0; x <= m; x++) {
+      if (x-w[k] >= 0) {
+         possible[x][k] |= possible[x-w[k]][k-1];
+      }
+      possible[x][k] |= possible[x][k-1];
+   }
+}

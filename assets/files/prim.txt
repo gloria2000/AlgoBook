@@ -1,0 +1,8 @@
+       "KRUSKAL(G):\n"
+        "A = ∅\n"
+        "For each vertex v ∈ G.V:\n"
+        "    MAKE-SET(v)\n"
+        "For each edge (u, v) ∈ G.E ordered by increasing order by weight(u, v):\n"
+        "    if FIND-SET(u) ≠ FIND-SET(v):\n"
+        "    A = A ∪ {(u, v)}\n"
+        "    UNION(u, v)\n"

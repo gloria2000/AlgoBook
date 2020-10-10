@@ -1,0 +1,15 @@
+//recursive algorithm\n
+vector<int> subset;
+void generate(int k) {
+   if (k == n+1) {
+      //subset created,process subset
+   } 
+   else {
+      // include k in the subset
+      subset.push_back(k);
+      generate(k+1);
+      subset.pop_back();
+      // don’t include k in the subset
+      generate(k+1);
+   }
+}

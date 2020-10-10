@@ -1,0 +1,20 @@
+//recursive algorithm to generat
+//permutations of a set of n elements\n
+vector<int> permutation;
+bool chosen[n+1];
+
+void search() {
+  if (permutation.size() == n) {
+    // process permutation
+  }
+  else {
+    for (int i = 1; i <= n; i++) {
+      if (chosen[i]) continue;
+      chosen[i] = true;
+      permutation.push_back(i);
+      search();
+      chosen[i] = false;
+      permutation.pop_back();
+    }
+  }
+}

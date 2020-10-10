@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:algobook/pages/DataStructures.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:url_launcher/url_launcher.dart';
 
 
@@ -16,12 +16,23 @@ class AlgoExist extends StatefulWidget {
 
 class _AlgoExistState extends State<AlgoExist> {
   final int num;
+  String code;
   _AlgoExistState(this.num);
   Store a = new Store();
 
+  fetchAlgoFromFile(String path) async{
+    String algorithm;
+    algorithm = await rootBundle.loadString(path);
+
+    setState(() {
+      code = algorithm;
+    });
+  }
   @override
   void initState() {
     super.initState();
+    
+    fetchAlgoFromFile(a.code[num]);
     WidgetsBinding.instance.addPostFrameCallback((_) => start(context));
   }
   void start(BuildContext){asyncFunc(BuildContext);}
@@ -56,7 +67,7 @@ class _AlgoExistState extends State<AlgoExist> {
                 ),
                 height: MediaQuery.of(context).size.height*0.2,
                 width: double.infinity,
-                child: Text("${a.diction[num]}",
+                child: Text(a.diction[num],
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -102,7 +113,7 @@ class _AlgoExistState extends State<AlgoExist> {
                                 child: Column(
                                   children: [
                                     SizedBox(height: 10,),
-                                    SelectableText('${a.code[num]}',
+                                    Text(code,
                                       style: TextStyle(
                                           fontSize: 15  ,
                                           fontFamily: 'SourceCodePro'

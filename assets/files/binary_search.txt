@@ -1,0 +1,15 @@
+beg: first element
+end: last element
+
+int binarySearch(int array[], int x, int beg, int end) {
+  while (beg <= end) {
+    int mid = beg + (end - beg) / 2;
+    if (array[mid] == x)
+      return mid;
+    if (array[mid] < x)
+      beg = mid + 1;
+    else
+      end = mid - 1;
+  }
+  return -1;
+}

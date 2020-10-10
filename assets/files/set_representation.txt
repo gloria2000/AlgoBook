@@ -1,0 +1,16 @@
+//to represent the set {1,3,4,8}
+
+int x=0;
+x |= (1<<1);
+x |=(1<<3);
+x |=(1<<4);
+x |=(1<<8);
+
+//to print size of the set C++ STL
+cout <<__builtin_popcount(x)<<'\n';
+
+//print all elements belonging to the set
+for(int i=0; i<32; i++){
+   if(x&(1<<i))cout<<i
+;
+}
