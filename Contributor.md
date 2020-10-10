@@ -12,7 +12,7 @@ You don't have to know Flutter to contribute to this project! Follow the given s
 * Submit the PR! 
 
 
-If you are want to contribute more, you can checkout this video where i have explained how you can display your algorithm in the app, run and debug the app and submit pr.
+If you want to contribute more, you can checkout this video where i have explained how you can display your algorithm in the app, run and debug the app and submit pr.
 (update link here)
 
 
