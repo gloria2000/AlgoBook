@@ -205,7 +205,8 @@ class _MyHomePageState extends State<MyHomePage> {
                             customTile("Monto-Carlo Algorithm", 28),
                             customTile("Maximum Subarray Sum", 31),
                             customTile("Generating subsets", 34),
-                            customTile("Generating permutations", 35)
+                            customTile("Generating permutations", 35),
+                            customTile("Floor of square root", 101)
                           ],
                         ),
                       ),

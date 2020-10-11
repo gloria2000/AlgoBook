@@ -107,6 +107,7 @@ class Store {
     33: "S E T\nR E P R E S E N T A T I O N { }",
     34: "G E N E R A T I N G\nS U B S E T S { }",
     35: "G E N E R A T I N G\nP E R M U T A T I O N S { }",
+    101: "S Q U A R E \n R O O T {}"
     
   };
 
@@ -127,6 +128,7 @@ class Store {
     13: "O(mn)",
     14: "O(n\u00B2)",
     31: "O(n)",
+    101:"O(n)",
   };
   var code = {
     0: 'assets/files/bubble_sort.txt',
@@ -165,6 +167,6 @@ class Store {
     33: 'assets/files/set_representation.txt',
     34: 'assets/files/generating_subsets.txt',
     35:'assets/files/generating_permutation.txt',
-    
+    101:'assets/files/squareRoot.txt'
   };
 }
