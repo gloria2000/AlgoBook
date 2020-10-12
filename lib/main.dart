@@ -11,6 +11,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        accentColor: Color(0xFF24A19C),
+        primaryColor:Color(0xFF24A19C),
+        splashColor: Color(0xFF24A19C),
+        focusColor: Color(0xFF24A19C),
+        highlightColor: Color(0xFF24A19C),
+        hintColor: Color(0xFF24A19C),
+        hoverColor: Color(0xFF24A19C),
+      ),
       title: '',
       color: Color(0xFF24A19C),
       home: MyHomePage(title:'Algo Book'),

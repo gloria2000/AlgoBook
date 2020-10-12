@@ -1,0 +1,29 @@
+//Producer Process
+do {
+   .
+   . PRODUCE ITEM
+   .
+   wait(empty);
+   wait(mutex);
+   .
+   . PUT ITEM IN BUFFER
+   .
+   signal(mutex);
+   signal(full);
+
+} while(1);
+
+//Consumer Process
+do {
+
+   wait(full);
+   wait(mutex);
+   . .
+   . REMOVE ITEM FROM BUFFER
+   .
+   signal(mutex);
+   signal(empty);
+   .
+   . CONSUME ITEM
+   .
+} while(1);
