@@ -33,7 +33,7 @@
 
 //Sort both arrays r0[] and r1[]
 //Servicing request according to head direction
-    if(dir==0)//towards beginning
+    if(dir==0) //towards beginning
     {
         for(i=n0-1,j=0;i>=0,j<n0;i--,j++)
         {
@@ -49,7 +49,7 @@
         }
         
     }
-    else//towards end
+    else //towards end
     {
         for(i=0,j=0;i<n1,j<n1;i++,j++)
         {
