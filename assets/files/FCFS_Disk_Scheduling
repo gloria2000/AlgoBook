@@ -1,0 +1,18 @@
+//fcfs disk scheduling
+
+//head-->head position
+//rs[]-->request sequence
+//front-->position of current element
+//rear-->position of last element
+  
+for(front=0;front<=rear;front++)
+    {
+        d=abs(rs[front]-head);
+        dist+=d;
+        seek_count+=1;
+        head=rs[front];
+    }
+    print("Total seek-time: %d",dist);
+    print("Seek-count: %d",seek_count);
+    print("Average seek-time: %f",(float)dist/seek_count);
+
