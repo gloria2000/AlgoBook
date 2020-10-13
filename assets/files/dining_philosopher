@@ -1,4 +1,5 @@
-//structure of i-th philosopher
+//The structure of philosopher i
+
 do {
    wait( chopstick[i] );
    wait( chopstick[ (i+1) % 5] );
