@@ -6,7 +6,7 @@
 //rear-->position of last element
   
 for(front=0;front<=rear;front++)
-    {
+    { 
         d=abs(rs[front]-head);
         dist+=d;
         seek_count+=1;
