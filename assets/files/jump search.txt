@@ -1,0 +1,16 @@
+Begin
+   blockSize := √size
+   start := 0
+   end := blockSize
+   while array[end] <= key AND end < size do
+      start := end
+      end := end + blockSize
+      if end > size – 1 then
+         end := size
+   done
+   for i := start to end -1 do
+      if array[i] = key then
+         return i
+   done
+   return invalid location
+End
