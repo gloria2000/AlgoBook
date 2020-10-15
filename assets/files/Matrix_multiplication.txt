@@ -1,0 +1,25 @@
+Step 1: Start the Program.
+
+Step 2: Enter the row and column of the first (a) matrix.
+
+Step 3: Enter the row and column of the second (b) matrix.
+
+Step 4: Enter the elements of the first (a) matrix.
+
+Step 5: Enter the elements of the second (b) matrix.
+
+Step 6: Print the elements of the first (a) matrix in matrix form.
+
+Step 7: Print the elements of the second (b) matrix in matrix form.
+
+Step 8: Set a loop up to row.
+
+Step 9: Set an inner loop up to the column.
+
+Step 10: Set another inner loop up to the column.
+
+Step 11: Multiply the first (a) and second (b) matrix and store the element in the third matrix (c)
+
+Step 12: Print the final matrix.
+
+Step 13: Stop the Program.
