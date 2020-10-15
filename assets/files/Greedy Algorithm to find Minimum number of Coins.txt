@@ -1,0 +1,14 @@
+1. Sort the array of coins in decreasing order.
+2. Initialize result as empty.
+3. Find the largest denomination that is smaller than current amount.
+4. Add found denomination to result. Subtract value of found denomination from amount.
+5. If amount becomes 0, then print result.
+6. Else repeat steps 3 and 4 for new value of V.
+
+Input: V = 70
+Output: 2
+We need a 50 Rs note and a 20 Rs note.
+
+Input: V = 121
+Output: 3
+We need a 100 Rs note, a 20 Rs note and a 1 Rs coin. 
