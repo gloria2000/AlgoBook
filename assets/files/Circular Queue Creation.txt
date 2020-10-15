@@ -1,0 +1,36 @@
+1. Define a structure node with and integer element and a pointer variable of the structure
+
+typedef struct node
+{	
+	int data;
+	struct node *link;
+}node;
+
+2. Declare some pointer variables that have to be used
+
+node *start,*ptr,*temp;
+
+3. Dynamically initialize the start pointer and set ptr to start
+
+start = (node*)malloc(sizeof(node));
+start->data = 0;
+start->link = NULL;
+ptr = start;
+
+4. For the number of elements to be read into the queue repeat the following block of code. Assume the data to be entered is stored in a variable num.
+
+temp = (node*)malloc(sizeof(node));     			// declare a temp pointer
+temp->data = num;						// store the data
+temp->link = NULL;						// make it point to null
+ptr->link = temp;						// point the previous element to the current element
+ptr = ptr->link;						// update the value of ptr
+
+5. Make the last element point to the start of the queue.
+
+ptr->link = start;
+
+6. To print the elements in queue
+
+ptr = start->link;						// set ptr to start node's link, which points to the first element
+
+7. While ptr is not equal to start print each data part.
