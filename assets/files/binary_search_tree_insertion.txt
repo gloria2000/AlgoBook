@@ -1,0 +1,25 @@
+ptr=root
+flag=false
+while(ptr!=NULL) and (flag=false) do
+  if(item<ptr->data)
+    ptr1=ptr
+    ptr=ptr->lchild
+  else if(item>ptr->data)
+    ptr1=ptr
+    ptr=ptr->rchild
+  else if(item=ptr->data)
+    flag=true
+    print("Data already exist")
+  end if
+end while
+if(ptr=NULL)
+  new=getnode()
+  new->data=item
+  new->lchild=NULL
+  new->rchild=NULL
+  if(ptr1->data>item)
+    ptr1->lchild=new
+  else if(ptr1->data<item)
+    ptr1->rchild=new
+  end if
+end if
