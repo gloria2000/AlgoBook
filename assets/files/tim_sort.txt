@@ -1,0 +1,100 @@
+// The array is divided into blocks known as Run. These runs are merged using the combine function in merge sort.The size of the run array is in the range of 32 to 64.
+// The performance of merge function is maximised when the size of run is a power of 2. 
+// We assume the size of run to 32.
+
+const int run = 32;  
+
+// Function for tim sort. a[] is the input array and n is the size of the array.
+
+void timSort(int a[], int n)                                
+{  
+    int i,size,beginning,mid,end;  
+    
+    for (i = 0; i < n; i+=run)  
+        insertionSort(a, i, minimum((i+31), (n-1)));                // The (i+31) comes in the minimum function as the size of a run is 32.
+    
+    for (size = run; size < n; size = 2*size)  
+    {  
+        for (beginning = 0; beginning < n; beginning += 2*size)  
+        {  
+            mid = beginning + size - 1;  
+            end = minimum((beginning + 2*size - 1), (n-1));  
+   
+            merge(a, beginning, mid, end);  
+        }  
+    }  
+}
+
+// Function to find the minimum of two numbers.
+
+int minimum(int a, int b)  
+{  
+    if(a<b)  
+    return a;   
+    else   
+    return b;   
+}  
+
+// Fucntion to perform insertion sort.
+// Beginning is the starting index of a run and end is the terminal index of a run.
+
+void insertionSort(int a[], int beginning, int end)  
+{  
+    int temp, i, j;
+    for (i = beginning + 1; i <= end; i++)  
+    {  
+        temp = a[i];  
+        j = i - 1;  
+        while (a[j] > temp && j >= beginning)  
+        {  
+            a[j+1] = a[j];  
+            j--;  
+        }  
+        a[j+1] = temp;  
+    }  
+} 
+
+//Function to merge the sorted runs
+
+void merge(int a[], int left, int mid, int right)  
+{  
+    int len1 = mid - left + 1, len2 = right - mid;  
+    int beginning[len1], end[len2];  
+    int i,j,k;  
+    for (i = 0; i < len1; i++)  
+        beginning[i] = a[left + i];  
+    for (i = 0; i < len2; i++)  
+        end[i] = a[mid + 1 + i];  
+   
+    i = 0;  
+    j = 0;  
+    k = left;  
+   
+    while (i < len1 && j < len2)  
+    {  
+        if (beginning[i] <= end[j])  
+        {  
+            a[k] = beginning[i];  
+            i++;  
+        }  
+        else  
+        {  
+            a[k] = end[j];  
+            j++;  
+        }  
+        k++;  
+    }  
+    while (i < len1)  
+    {  
+        a[k] = beginning[i];  
+        k++;  
+        i++;  
+    }  
+   
+    while (j < len2)  
+    {  
+        a[k] = end[j];  
+        k++;  
+        j++;  
+    }  
+}  
