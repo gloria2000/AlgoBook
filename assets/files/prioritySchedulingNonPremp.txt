@@ -1,0 +1,18 @@
+1. Start
+2. Accept the no of processes that must be scheduled as n.
+3. For each of the processes, assign the process ID and accept the priority numbers and the burst time of each process.
+4. Now, sort the queue of processes according to the priority numbers.(such that the highest priority job comes first and lowest priority job comes last)
+5. The waiting time of first process in the queue is 0 and its turn-around time is its burst time.(Set the values as such)
+6. For each process in the ready queue, calculate
+
+	a) Waiting Time of process(i) = Waiting time of process(i-1) + Burst Time of process(i-1)
+	
+	b) Turn-Around Time of process(i) = Waiting time of process(i) + Burst time of process(i)
+
+7. Now, atlast calculate
+	
+	a) Average Waiting Time = Sum of waiting times of all the processes / No of processes(n)
+
+	b) Average Turn-Around Time = Sum of Turn-Around Times of all processes / No of processes(n)
+
+8.Stop
