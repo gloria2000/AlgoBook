@@ -8,12 +8,14 @@ A new Flutter application for algorithms. This app is mainly to refer to the alg
 If you are a beginner and want to contribute in opensource projects, then this project is perfect for you.
   
 ## App UI
-![Home page](https://github.com/gloria2000/AlgoBook/blob/master/new%20ui.jpeg)
+<!-- ![Home page](https://github.com/gloria2000/AlgoBook/blob/master/new%20ui.jpeg)
 
 ![Algorithm or Code](https://github.com/gloria2000/AlgoBook/blob/master/2.jpeg)
 
-![Error page if algorithm is not found](https://github.com/gloria2000/AlgoBook/blob/master/3.jpeg)
-
+![Error page if algorithm is not found](https://github.com/gloria2000/AlgoBook/blob/master/3.jpeg) -->
+---
+|<img src="https://github.com/gloria2000/AlgoBook/blob/master/new%20ui.jpeg" width=200> | <img src="https://github.com/gloria2000/AlgoBook/blob/master/2.jpeg" width=200> | <img src="https://github.com/gloria2000/AlgoBook/blob/master/3.jpeg" width=200> | 
+|:---:|:---:|:---:|
 
 
 ## Getting Started
