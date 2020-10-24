@@ -14,7 +14,7 @@ If you are a beginner and want to contribute in opensource projects, then this p
 
 ![Error page if algorithm is not found](https://github.com/gloria2000/AlgoBook/blob/master/3.jpeg) -->
 ---
-|<img src="https://github.com/gloria2000/AlgoBook/blob/master/new%20ui.jpeg" width=150> | <img src="https://github.com/gloria2000/AlgoBook/blob/master/2.jpeg" width=150> | <img src="https://github.com/gloria2000/AlgoBook/blob/master/3.jpeg" width=150> | 
+|<img src="https://github.com/gloria2000/AlgoBook/blob/master/new%20ui.jpeg" width=200> | <img src="https://github.com/gloria2000/AlgoBook/blob/master/2.jpeg" width=200> | <img src="https://github.com/gloria2000/AlgoBook/blob/master/3.jpeg" width=200> | 
 |:---:|:---:|:---:|
 
 
